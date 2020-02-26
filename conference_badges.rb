@@ -13,7 +13,7 @@ def batch_badge_creator(name)	def batch_badge_creator(attendees)
 end	
 
 
-def assign_rooms	def assign_rooms(name)
+	def assign_rooms(name)
   rooms = []
 
   name.each.with_index(1) do |name, room_assignment|
@@ -23,7 +23,7 @@ def assign_rooms	def assign_rooms(name)
 
 end
 
-def printer	def printer(name)
+def printer(name)
   batch_badge_creator(name).each do |badges|
     puts badges
   end
