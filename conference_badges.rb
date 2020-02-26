@@ -11,4 +11,4 @@ def batch_badge_creator(atendees)
   end
   return new_array
 end
-end
+
