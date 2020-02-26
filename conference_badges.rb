@@ -5,5 +5,10 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(atendees)
-  attendees.map { |badges| badge_maker(badges) }
+  new_array = []
+  atendees.each do |name|
+    new_array.push("Hello, my name is #{name}.")
+  end
+  return new_array
+end
 end
